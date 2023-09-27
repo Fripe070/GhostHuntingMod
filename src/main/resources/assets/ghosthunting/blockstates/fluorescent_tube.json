@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "ghosthunting:block/fluorescent_tube" }
+    "lit=false": {
+      "model": "ghosthunting:block/fluorescent_tube_off"
+    },
+    "lit=true": {
+      "model": "ghosthunting:block/fluorescent_tube_on"
+    }
   }
 }
