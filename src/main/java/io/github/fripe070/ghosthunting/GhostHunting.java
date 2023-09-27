@@ -1,6 +1,7 @@
 package io.github.fripe070.ghosthunting;
 
 import io.github.fripe070.ghosthunting.block.FluorescentTubeBlock;
+import io.github.fripe070.ghosthunting.block.LightSwitchBlock;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -21,6 +22,11 @@ public class GhostHunting implements ModInitializer {
     public static final Block FLUORESCENT_TUBE = registerBlockWithItem(
             "fluorescent_tube",
             new FluorescentTubeBlock(FabricBlockSettings.copy(Blocks.REDSTONE_LAMP))
+    );
+
+    public static final Block LIGHT_SWITCH_BLOCK = registerBlockWithItem(
+            "light_switch",
+            new LightSwitchBlock(FabricBlockSettings.copyOf(Blocks.LEVER))
     );
 
 
