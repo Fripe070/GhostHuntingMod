@@ -8,6 +8,8 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Arrays;
+
 public class LightswitchBlockEntity extends BlockEntity implements BlockEntityProvider {
     public LightswitchBlockEntity(BlockPos pos, BlockState state) {
         super(GhostHunting.LIGHT_SWITCH_BLOCK_ENTITY, pos, state);
@@ -24,12 +26,10 @@ public class LightswitchBlockEntity extends BlockEntity implements BlockEntityPr
     @Override
     public void writeNbt(NbtCompound nbt) {
         nbt.putIntArray("activate_position", activate_position);
-        super.writeNbt(nbt);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
-        super.readNbt(nbt);
         activate_position = nbt.getIntArray("activate_position");
     }
 }
