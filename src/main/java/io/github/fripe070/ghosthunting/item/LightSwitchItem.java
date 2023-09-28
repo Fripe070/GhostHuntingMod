@@ -35,7 +35,7 @@ public class LightSwitchItem extends BlockItem {
                 case SOUTH -> clickPos = clickPos.south(1);
                 case EAST -> clickPos = clickPos.east(1);
                 case WEST -> clickPos = clickPos.west(1);
-                case UP -> clickPos = clickPos.up(-1);
+                case UP -> clickPos = clickPos.up(1);
                 case DOWN -> clickPos = clickPos.down(1);
             }
 
