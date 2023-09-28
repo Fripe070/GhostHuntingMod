@@ -24,12 +24,10 @@ public class LightswitchBlockEntity extends BlockEntity implements BlockEntityPr
     @Override
     public void writeNbt(NbtCompound nbt) {
         nbt.putIntArray("activate_position", activate_position);
-        super.writeNbt(nbt);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
-        super.readNbt(nbt);
         activate_position = nbt.getIntArray("activate_position");
     }
 }
