@@ -8,8 +8,6 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Arrays;
-
 public class LightswitchBlockEntity extends BlockEntity implements BlockEntityProvider {
     public LightswitchBlockEntity(BlockPos pos, BlockState state) {
         super(GhostHunting.LIGHT_SWITCH_BLOCK_ENTITY, pos, state);
